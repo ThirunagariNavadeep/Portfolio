@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("navadeep-portfolio-bcjyjehcv-thirunagarinavadeeps-projects.vercel.app"),
+  metadataBase: new URL("https://navadeep-portfolio-bcjyjehcv-thirunagarinavadeeps-projects.vercel.app"),
 
   title: {
     default: "Navadeep Thirunagari | Data Analyst & AI Developer",
