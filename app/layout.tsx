@@ -13,8 +13,10 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const siteUrl = "https://navadeep-portfolio-three.vercel.app";
+
 export const metadata: Metadata = {
-  metadataBase: new URL("https://navadeep-portfolio-bcjyjehcv-thirunagarinavadeeps-projects.vercel.app"),
+  metadataBase: new URL(siteUrl),
 
   title: {
     default: "Navadeep Thirunagari | Data Analyst & AI Developer",
@@ -27,6 +29,7 @@ export const metadata: Metadata = {
   keywords: [
     "Navadeep Thirunagari",
     "Data Analyst",
+    "Analytics Engineer",
     "Business Intelligence",
     "Power BI",
     "SQL",
@@ -41,6 +44,7 @@ export const metadata: Metadata = {
   authors: [
     {
       name: "Navadeep Thirunagari",
+      url: siteUrl,
     },
   ],
 
@@ -49,21 +53,19 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Navadeep Thirunagari | Data Analyst & AI Developer",
     description:
-      "Explore my portfolio featuring analytics dashboards, machine learning projects, and AI applications.",
-    url: "https://navadeep-portfolio-bcjyjehcv-thirunagarinavadeeps-projects.vercel.app",
+      "Explore my portfolio featuring analytics dashboards, machine learning projects, and AI-powered applications.",
+    url: siteUrl,
     siteName: "Navadeep Portfolio",
     locale: "en_US",
     type: "website",
-   },
+  },
 
   twitter: {
     card: "summary_large_image",
-    title: "Navadeep Thirunagari | Portfolio",
+    title: "Navadeep Thirunagari | Data Analyst & AI Developer",
     description:
       "Data Analytics • Power BI • Machine Learning • AI",
-   
   },
-
 };
 
 export default function RootLayout({
