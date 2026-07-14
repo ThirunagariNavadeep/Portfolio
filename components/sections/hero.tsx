@@ -144,7 +144,7 @@ export function Hero() {
               </Link>
 
               <a
-                href="/resume.pdf"
+                href="/Navadeep_Thirunagari_Data_Analyst_Resume.pdf"
                 download
                 className="group inline-flex items-center gap-3 rounded-xl border border-white/10 bg-white/[0.04] px-6 py-4 font-semibold text-white backdrop-blur-xl transition-all duration-300 hover:-translate-y-1 hover:border-cyan-400/40 hover:bg-white/[0.08]"
               >
