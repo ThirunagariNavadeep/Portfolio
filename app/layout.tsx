@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import { MouseSpotlight } from "@/components/effects/mouse-spotlight";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -53,29 +54,16 @@ export const metadata: Metadata = {
     siteName: "Navadeep Portfolio",
     locale: "en_US",
     type: "website",
-    images: [
-      {
-        url: "/og-image.png",
-        width: 1200,
-        height: 630,
-        alt: "Navadeep Portfolio",
-      },
-    ],
-  },
+   },
 
   twitter: {
     card: "summary_large_image",
     title: "Navadeep Thirunagari | Portfolio",
     description:
       "Data Analytics • Power BI • Machine Learning • AI",
-    images: ["/og-image.png"],
+   
   },
 
-  icons: {
-    icon: "/favicon.ico",
-    shortcut: "/favicon.ico",
-    apple: "/favicon.ico",
-  },
 };
 
 export default function RootLayout({
@@ -86,9 +74,13 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-black text-white`}
+        className={`${geistSans.variable} ${geistMono.variable} overflow-x-hidden bg-black text-white antialiased`}
       >
-        {children}
+        <MouseSpotlight />
+
+        <div className="relative z-10">
+          {children}
+        </div>
       </body>
     </html>
   );
