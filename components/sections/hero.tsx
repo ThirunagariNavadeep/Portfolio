@@ -38,8 +38,7 @@ export function Hero() {
     <section className="relative flex min-h-screen items-center overflow-hidden">
       <AuroraBackground />
 
-      {/* Background grid */}
-
+      {/* Background Grid */}
       <div
         aria-hidden="true"
         className="pointer-events-none absolute inset-0 opacity-[0.035]"
@@ -52,8 +51,7 @@ export function Hero() {
         }}
       />
 
-      {/* Decorative glow */}
-
+      {/* Decorative Glow */}
       <div
         aria-hidden="true"
         className="pointer-events-none absolute left-1/2 top-1/2 h-[700px] w-[700px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-cyan-500/[0.04] blur-[120px]"
@@ -61,14 +59,13 @@ export function Hero() {
 
       <Container>
         <div className="relative z-10 grid items-center gap-16 py-24 lg:grid-cols-2 lg:gap-20">
-
           {/* Left Content */}
-
           <motion.div
             variants={containerVariants}
             initial="hidden"
             animate="visible"
           >
+            {/* Availability Badge */}
             <motion.div
               variants={itemVariants}
               className="mb-6 inline-flex items-center gap-3 rounded-full border border-cyan-400/20 bg-cyan-400/[0.06] px-4 py-2"
@@ -83,6 +80,7 @@ export function Hero() {
               </span>
             </motion.div>
 
+            {/* Introduction */}
             <motion.p
               variants={itemVariants}
               className="text-lg font-medium text-cyan-400"
@@ -90,6 +88,7 @@ export function Hero() {
               Hello, I&apos;m
             </motion.p>
 
+            {/* Name */}
             <motion.h1
               variants={itemVariants}
               className="mt-3 text-5xl font-black leading-[0.95] tracking-[-0.05em] sm:text-6xl md:text-7xl xl:text-8xl"
@@ -102,10 +101,8 @@ export function Hero() {
               </span>
             </motion.h1>
 
-            <motion.div
-              variants={itemVariants}
-              className="mt-8"
-            >
+            {/* Main Tagline */}
+            <motion.div variants={itemVariants} className="mt-8">
               <p className="text-sm font-semibold uppercase tracking-[0.3em] text-cyan-400">
                 Data • Intelligence • Products
               </p>
@@ -118,15 +115,17 @@ export function Hero() {
               </h2>
             </motion.div>
 
+            {/* Description */}
             <motion.p
               variants={itemVariants}
               className="mt-7 max-w-xl text-lg leading-8 text-zinc-400"
             >
-              I build analytics dashboards, machine learning solutions,
-              and AI-powered applications that turn complex data into
-              clear, actionable business insights.
+              I build analytics dashboards, machine learning solutions, and
+              AI-powered applications that turn complex data into clear,
+              actionable business insights.
             </motion.p>
 
+            {/* CTA Buttons */}
             <motion.div
               variants={itemVariants}
               className="mt-10 flex flex-wrap gap-4"
@@ -145,7 +144,7 @@ export function Hero() {
 
               <a
                 href="/Navadeep_Thirunagari_Data_Analyst_Resume.pdf"
-                download
+                download="Navadeep_Thirunagari_Data_Analyst_Resume.pdf"
                 className="group inline-flex items-center gap-3 rounded-xl border border-white/10 bg-white/[0.04] px-6 py-4 font-semibold text-white backdrop-blur-xl transition-all duration-300 hover:-translate-y-1 hover:border-cyan-400/40 hover:bg-white/[0.08]"
               >
                 <Download
@@ -157,14 +156,13 @@ export function Hero() {
               </a>
             </motion.div>
 
+            {/* Quick Stats */}
             <motion.div
               variants={itemVariants}
               className="mt-14 flex flex-wrap gap-x-8 gap-y-4 border-t border-white/10 pt-7"
             >
               <div>
-                <p className="text-2xl font-black text-white">
-                  4
-                </p>
+                <p className="text-2xl font-black text-white">4</p>
 
                 <p className="mt-1 text-sm text-zinc-500">
                   Featured Projects
@@ -172,9 +170,7 @@ export function Hero() {
               </div>
 
               <div>
-                <p className="text-2xl font-black text-white">
-                  Power BI
-                </p>
+                <p className="text-2xl font-black text-white">Power BI</p>
 
                 <p className="mt-1 text-sm text-zinc-500">
                   Business Intelligence
@@ -182,9 +178,7 @@ export function Hero() {
               </div>
 
               <div>
-                <p className="text-2xl font-black text-white">
-                  Python + SQL
-                </p>
+                <p className="text-2xl font-black text-white">Python + SQL</p>
 
                 <p className="mt-1 text-sm text-zinc-500">
                   Analytics Stack
@@ -194,7 +188,6 @@ export function Hero() {
           </motion.div>
 
           {/* Right Dashboard */}
-
           <motion.div
             initial={{
               opacity: 0,
@@ -213,15 +206,13 @@ export function Hero() {
             }}
             className="relative flex justify-center lg:justify-end"
           >
-            {/* Dashboard glow */}
-
+            {/* Dashboard Glow */}
             <div
               aria-hidden="true"
               className="absolute inset-10 rounded-full bg-cyan-500/10 blur-[100px]"
             />
 
-            {/* Floating dashboard */}
-
+            {/* Floating Dashboard */}
             <motion.div
               animate={{
                 y: [0, -10, 0],
@@ -239,10 +230,10 @@ export function Hero() {
         </div>
       </Container>
 
-      {/* Scroll indicator */}
-
+      {/* Scroll Indicator */}
       <motion.a
         href="#projects"
+        aria-label="Scroll to projects"
         initial={{
           opacity: 0,
         }}
